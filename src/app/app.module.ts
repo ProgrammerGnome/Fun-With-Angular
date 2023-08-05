@@ -5,8 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { FirstCompComponent } from './first-comp/first-comp.component';
 import { SecondCompComponent } from './second-comp/second-comp.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import {MyComponent} from "./horizontal-collapse/horizontal-collapse.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,11 +14,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
+    MyComponent,
     RouterModule.forRoot([
       {path: 'firstPage', component: FirstCompComponent},
       {path: 'secondPage', component: SecondCompComponent},
     ]),
-    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

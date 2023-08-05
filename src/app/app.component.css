@@ -24,10 +24,9 @@
 
 body {
   text-align: center;
-  background: #0056B9;
-}
-
-a {
+  align-items: center;
+  /*background: #0056B9;*/
+  background: #666666;
   color: white;
 }
 
